@@ -1,0 +1,18 @@
+server:
+  port: 8100
+
+spring:
+  application:
+    name: ribbon-consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hejinyo:password@cloud.hejinyo.cn/eureka
+    # 缓存清单每隔30秒跟新一次
+    registry-fetch-interval-seconds: 30
+
+info:
+  app:
+    name: jelly-consumer
+    version: 1.0
